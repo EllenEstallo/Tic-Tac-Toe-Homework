@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+
+    <div id="board"></div>
+    <div id="message"></div>
+    <button id="restart">Restart</button>
+    <!-- <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script> -->
+
+    <div class="container"> 
+      <!-- This creates a container div to hold all the elements of the Tic Tac Toe game. -->
+      <div class="board" id="board">
+        <!-- This creates a div for the game board and assigns it an ID of "board". -->
+
+        <div class="cell" data-index="0"></div>
+        <!-- This creates a div representing a cell in the Tic Tac Toe board. The data-index attribute helps identify the cell (0, 1, 2, etc. for each cell). -->
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      <div class="message" id="message"></div>
+      <!-- This creates a div to display messages, like who won the game or if it's a draw. -->
+      <button id="restart" style="margin-top: 20px">Restart</button>
+      <!-- This creates a button to restart the game, and some margin is added for spacing. -->
+    </div>
+</body>
+    <!-- <script src="./script.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script> 
+  </body>
+</html>
